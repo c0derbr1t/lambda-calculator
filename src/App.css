@@ -5,8 +5,11 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .display {
+    margin: 25px auto;
     margin-top: 25px;
     height: 100px;
     width: 450px;
@@ -19,4 +22,88 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+    border: 2px inset rgb(22, 22, 22);
   }
+
+.App {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.specialButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.special {
+    background-color: rgb(50, 67, 224);
+    color: white;
+    border-radius: 50px;
+    font-size: 4rem;
+    width: 100px;
+    margin: 25px 15px;
+}
+
+.operatorButtons {
+    width: 50%;
+}
+
+.operator {
+    background-color: rgb(50, 127, 163);
+    color: white;
+    border-radius:50px;
+    font-size: 4rem;
+    width: 100px;
+    text-align: center;
+    margin: 24px 15px;
+}
+/* 
+  .operator span {
+      margin: 0 auto;
+  } */
+
+.numberButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: -5px auto;
+}
+
+.number {
+    background-color: rgb(43, 44, 119);
+    color: white;
+    border-radius:50px;
+    font-size: 4rem;
+    width: 100px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.number:nth-Child(10) {
+    flex-grow: 2;
+    margin: 25px 15px 25px 25px;
+}
+
+.number:nth-Child(11) {
+    margin: 25px 25px 25px 15px;
+}
+
+span {
+    margin: 0 auto;
+}
